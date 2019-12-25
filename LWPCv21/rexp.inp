@@ -1,7 +1,7 @@
-file-mds    Output\
-file-lwf    Output\
-file-prf    Profile\
-file-ndx    Profile\
+file-mds    ../output/
+file-lwf    ../output/
+file-prf    ../Profile/
+file-ndx    ../Profile/
 case-id     OMEGA coverage of the Mediterranean
   Name the output files
 tx          rexp
