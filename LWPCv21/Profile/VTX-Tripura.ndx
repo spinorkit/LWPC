@@ -1,0 +1,16 @@
+;Identify the transmitter
+;tx-data     VTX
+;Choose date and time
+;ionosphere  lwpm Aug/15 11:20
+;Set maximum range of paths
+;range-max   2280
+;Choose bearing angle at 39
+;bearings    39
+;  rho  beta  hprime
+     0  0.33   71.5
+   540  0.33   71.5
+   570  0.36   72.5
+   610  0.33   71.5
+   770  0.33   71.5
+  1500  0.33   71.5
+  2280  0.33   71.5

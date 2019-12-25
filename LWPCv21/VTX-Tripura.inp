@@ -1,0 +1,24 @@
+file-mds    ../output/
+file-lwf    ../output/
+file-prf    ../Profile/
+file-ndx    ../Profile/
+case-id     VTX-Tripura
+  Name the output files
+tx          VTX
+  Identify the transmitter
+tx-data     VTX 17 08.26 -77.44 100 0 0 0 Vijayanarayanam, India
+  Tx id    freq/kHz  lat  long   Power 
+ionosphere  range exponential VTX-Tripura
+  Set maximum range of paths
+range-max   2280
+  Choose bearing angle at 39.39
+bearing     39.39
+  Get extra print out from the mode generation
+print-swg   2
+  Set the maximum range for the fields at 2280 km
+lwf-vs-dist 2280
+  Get extra print out from the mode summation
+print-lwf   2
+start
+quit
+
