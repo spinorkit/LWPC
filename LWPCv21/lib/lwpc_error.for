@@ -74,7 +74,7 @@ c            0 defines an informational message only
              sys_error_level=0
          end if
 
-         error stop error_msg(:len_trim(error_msg))
+         error stop 'error_msg'
  
       else
 

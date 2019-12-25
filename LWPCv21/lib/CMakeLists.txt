@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.7)
+cmake_minimum_required (VERSION 3.5)
 project(LWPC Fortran C)
 enable_testing()
 
@@ -42,9 +42,10 @@ xlineq.for
 # -fno-automatic is necessary to avoid read_lwf error
 target_compile_options(liblwpc PRIVATE 
                       -std=legacy
-                      -fdec
+#                      -fdec
                       -fno-automatic
                       -fno-align-commons
+                      -fdollar-ok
                       )
 
 
