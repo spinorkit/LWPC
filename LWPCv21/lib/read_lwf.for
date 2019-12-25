@@ -219,12 +219,12 @@ c        Heading for detailed outputs
 c           Output vs range
             write(lwpcLOG_lun,
      &          '(a,'' component''/
-     &          3(''  dist   amplitude  phase  ''))')
+     &          1(''  dist   amplitude  phase  ''))')
      &            label(ncmp:ncmp)
-            nl=(nrpts-1)/3+1
+            nl=(nrpts-1)/1+1
             do i1=1,nl
                write(lwpcLOG_lun,
-     &             '(3(f7.0,2f10.4))')
+     &             '(1(f7.0,2f10.4))')
      &              (xy(i),amp_lwf(i),phs_lwf(i),i=i1,nrpts,nl)
             end do
          else
@@ -232,7 +232,7 @@ c           Output vs range
 
 c           Output at receiver only
             if (ncmp .eq. 1) then
-              write(lwpcLOG_lun,'(''E  dist   amplitude  phase  ''))')
+              write(lwpcLOG_lun,'('' E  dist   amplitude  phase  ''))')
             end if
             write(lwpcLOG_lun,
      &          '(a,f7.0,2f10.4)')
